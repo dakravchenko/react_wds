@@ -14,7 +14,7 @@ function App() {
 
   useEffect(() => {
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(todos))
-  }, [todos]
+  }, [todos])
 
   function handleAddTodo(e){
     const name = todoNameRef.current.value
